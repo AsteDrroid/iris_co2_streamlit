@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 import seaborn as sns
 import streamlit as st
-import plotly.express as px
+
 
 st.title("Data Visualization web app")
 
@@ -33,27 +33,20 @@ st.plotly_chart(fig)
 
 fig = px.scatter(df, x="sepal_width", y="sepal_length")
 
-
-
-
-"""   
-==============================================================
-
-"""
 st.text('4 Iris dataset')
-df = px.data.iris()
-#df.head()
+
 
 co2 = pd.read_csv('CO2_per_capita.csv', sep=";")
 
 co2 = co2.sort_values('Year')
 
 # TODO: Visualize your data on a World map 
-fig = px.scatter_geo(co2, locations="Country Code",
+fig2 = px.scatter_geo(co2, locations="Country Code",
 # color="continent", # which column to use to set the color of markers
 hover_name="Country Name", # column added to hover information
 #size="C02 Per Capita (metric tons)", # size of markers
 animation_frame = "Year",
 projection="natural earth")
+st.plotly_chart(fig2)
 
 fig.show()
