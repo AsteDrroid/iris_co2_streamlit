@@ -30,11 +30,11 @@ marginal_x='box')
 
 st.plotly_chart(fig)
 
-"""
+
 fig = px.scatter(df, x="sepal_width", y="sepal_length")
 fig.show()
-"""
-px.scatter(df, x="sepal_width", y="sepal_length").show()
+
+
 
 """   
 ==============================================================
@@ -56,26 +56,3 @@ animation_frame = "Year",
 projection="natural earth")
 
 fig.show()
-
-""" 
-mkdir my_streamlit_app
- git init -b main                                                                       [🐍 3.10.12]
-git add --all
-git commit -m "Streamlit first commit"
-
-pipreqs  #pip install pipreqs  # pour requirements.txt
-
-Then, create a repository on GitHub : https://github.com/new and copy the ssh link of the repository.
-
-git remote add origin git@github.com:AUTHENTIKRIDDIM/iris_co2_streamlit.git
-git branch --set-upstream-to=origin/main main
-git pull --rebase
-git push origin main
- """
-
-"""
-                                                                      [🐍 3.10.12]
-git add --all
-git commit -m "Streamlit 2nd commit"
-git push origin main
-"""
