@@ -33,7 +33,7 @@ st.plotly_chart(fig)
 
 fig = px.scatter(df, x="sepal_width", y="sepal_length")
 
-st.text('4 Iris dataset')
+st.text('4 CO2_per_capita dataset')
 
 
 co2 = pd.read_csv('CO2_per_capita.csv', sep=";")
